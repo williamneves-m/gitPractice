@@ -1,0 +1,45 @@
+Comandos Git
+
+git init : inicia um repositório 
+git status : mostra o status dos arquivos na stage
+
+
+rm -rf .git : Exclui o repositorio .git
+git add + (nome do arquivo) : adiciona o arquivo para a stage para ser commitado
+
+git add "." : adiciona todos arquivos á stage
+git commit -m "title" -m "message" : faz o commit com titulo e texto.
+git commit -am "title" -m "message" : adiciona os arquivos á stage e faz o commit
+git commit -m "c0 - Meu primeiro commit" --amend: amend usado para corrigir o ultimo commit (descrição e arquivos).
+
+git reset index.html: reset é utilizado para retirar o arquivo da stage utilizar . No lugar do nome do arquivo para retirar todos arquivos adicionados a stage). 
+git checkout -- index.html: desfaz alterações do ulltimo commit (utilizar . No lugar do nome do arquivo para desfazer alterações de todos arquivos adicionados a stage).
+git clone urlDoRepositorio nomeDaPasta: clona o repositorio para minha máquina e cria uma pasta no diretorio.
+git log --all: lista todos arquivos dentro do git log.
+
+
+git push : envia os arquivos para o repositorio no github e atualiza o clone em meu repositório.
+git push --set-upstream origin nomeDaBranchDesejada : escolhe a branch como padrão e envia as atualizações
+git pull : recebe atualizações do repositorio do github para minha máquina
+git pull --set-upstream nomeDoRepositorio : escolhe a branch e recebe as utlimas atualizações do repositório 
+
+git checkout codigoDoCommit : verifica as informações do commit
+git checkout nomeDaBranch : vai para a branch escolhida
+git branch nomeEscolhidoParaBranch : cria uma nova branch.
+
+git checkout -b nomeDaBranch : cria uma nova branch e vai para ela
+git branch : lista todas as branchs criadas.
+git checkout -d nomeBranch : deleta uma branch.
+
+git remote add origin : sincroniza com o repositorio e cria uma origem, caso não exista.
+git remote add nomeRepositorioDesejado : sincroniza com o repositorio 
+git remote -v : mostra repositorios sincronizados.
+
+git log : Mostra alterações na branch
+git log --graph : Mostra alterações na branch em forma de gráfico
+git log --graph --oneline : Mostra um gráfico simples das alterações na branch.
+git merge nomeDaBranch : Transfere os commits da branch alternativa para a branch master.
+
+git remote add urlDoRepositorio: sincroniza com o repositório.
+git pull upstream nomeDoRepositorio: utilizado para receber as últimas atualizações do repositório do clone principal.
+git remote -v: mostra a quantidade de repositórios remotos que fazem parte da stream.
